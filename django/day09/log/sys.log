@@ -1,0 +1,722 @@
+2019-01-10 15:56:51,409 /app/add_stu_info/ GET 200 b'\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>Title</title>\n    \n    \n\n    \n    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>\n\n</head>\n<body>\n    \n    <form action="" method="post" enctype="multipart/form-data">\n        <input type="hidden" name="csrfmiddlewaretoken" value="NsAUnh2iBDvGmvEE33ZdAuMS64yM7aUYMmjNSHptHmNk6928Egq7NZy4hAGsScBJ">\n        <p>\xe5\xa7\x93\xe5\x90\x8d: <input type="text" name="username"> </p>\n        <p>\xe6\x80\xa7\xe5\x88\xab: <input type="text" name="gender"></p>\n        <p>\xe5\x9b\xbe\xe7\x89\x87: <input type="file" name="icon"> </p>\n        <p><input type="submit" value="\xe6\x8f\x90\xe4\xba\xa4"></p>\n    </form>\n\n</body>\n</html>' 0.005000591278076172
+2019-01-10 15:58:34,753 /app/add_stu_info/ GET 200 b'\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>Title</title>\n    \n    \n\n    \n    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>\n\n</head>\n<body>\n    \n    <form action="" method="post" enctype="multipart/form-data">\n        <input type="hidden" name="csrfmiddlewaretoken" value="xAKBqXCV1vFmPqi62xYqfXj54AViaS7vwutuVnZ67eX0z4GADKpkss5hf63YVUOg">\n        <p>\xe5\xa7\x93\xe5\x90\x8d: <input type="text" name="username"> </p>\n        <p>\xe6\x80\xa7\xe5\x88\xab: <input type="text" name="gender"></p>\n        <p>\xe5\x9b\xbe\xe7\x89\x87: <input type="file" name="icon"> </p>\n        <p><input type="submit" value="\xe6\x8f\x90\xe4\xba\xa4"></p>\n    </form>\n\n</body>\n</html>' 0.004000425338745117
+2019-01-10 15:59:03,841 Internal Server Error: /app/add_stu_info/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\wordspace\8.django\day07\app\views.py", line 95, in add_stu_info
+    1/0
+ZeroDivisionError: division by zero
+2019-01-10 15:59:03,842 /app/add_stu_info/ GET 500 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <title>ZeroDivisionError\n          at /app/add_stu_info/</title>\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background-color:#fff; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; }\n    h2 { margin-bottom:.8em; }\n    h2 span { font-size:80%; color:#666; font-weight:normal; }\n    h3 { margin:1em 0 .5em 0; }\n    h4 { margin:0 0 .5em 0; font-weight: normal; }\n    code, pre { font-size: 100%; white-space: pre-wrap; }\n    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }\n    tbody td, tbody th { vertical-align:top; padding:2px 3px; }\n    thead th {\n      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;\n      font-weight:normal; font-size:11px; border:1px solid #ddd;\n    }\n    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    table.vars { margin:5px 0 2px 40px; }\n    table.vars td, table.req td { font-family:monospace; }\n    table td.code { width:100%; }\n    table td.code pre { overflow:hidden; }\n    table.source th { color:#666; }\n    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }\n    ul.traceback { list-style-type:none; color: #222; }\n    ul.traceback li.frame { padding-bottom:1em; color:#666; }\n    ul.traceback li.user { background-color:#e0e0e0; color:#000 }\n    div.context { padding:10px 0; overflow:hidden; }\n    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }\n    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }\n    div.context ol li pre { display:inline; }\n    div.context ol.context-line li { color:#505050; background-color:#dfdfdf; padding: 3px 2px; }\n    div.context ol.context-line li span { position:absolute; right:32px; }\n    .user div.context ol.context-line li { background-color:#bbb; color:#000; }\n    .user div.context ol li { color:#666; }\n    div.commands { margin-left: 40px; }\n    div.commands a { color:#555; text-decoration:none; }\n    .user div.commands a { color: black; }\n    #summary { background: #ffc; }\n    #summary h2 { font-weight: normal; color: #666; }\n    #explanation { background:#eee; }\n    #template, #template-not-exist { background:#f6f6f6; }\n    #template-not-exist ul { margin: 0 0 10px 20px; }\n    #template-not-exist .postmortem-section { margin-bottom: 3px; }\n    #unicode-hint { background:#eee; }\n    #traceback { background:#eee; }\n    #requestinfo { background:#f6f6f6; padding-left:120px; }\n    #summary table { border:none; background:transparent; }\n    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }\n    #requestinfo h3 { margin-bottom:-1em; }\n    .error { background: #ffc; }\n    .specific { color:#cc3300; font-weight:bold; }\n    h2 span.commands { font-size:.7em;}\n    span.commands a:link {color:#5E5694;}\n    pre.exception_value { font-family: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 10px 0; }\n    .append-bottom { margin-bottom: 10px; }\n  </style>\n  \n  <script type="text/javascript">\n    function hideAll(elems) {\n      for (var e = 0; e < elems.length; e++) {\n        elems[e].style.display = \'none\';\n      }\n    }\n    window.onload = function() {\n      hideAll(document.querySelectorAll(\'table.vars\'));\n      hideAll(document.querySelectorAll(\'ol.pre-context\'));\n      hideAll(document.querySelectorAll(\'ol.post-context\'));\n      hideAll(document.querySelectorAll(\'div.pastebin\'));\n    }\n    function toggle() {\n      for (var i = 0; i < arguments.length; i++) {\n        var e = document.getElementById(arguments[i]);\n        if (e) {\n          e.style.display = e.style.display == \'none\' ? \'block\': \'none\';\n        }\n      }\n      return false;\n    }\n    function varToggle(link, id) {\n      toggle(\'v\' + id);\n      var s = link.getElementsByTagName(\'span\')[0];\n      var uarr = String.fromCharCode(0x25b6);\n      var darr = String.fromCharCode(0x25bc);\n      s.textContent = s.textContent == uarr ? darr : uarr;\n      return false;\n    }\n    function switchPastebinFriendly(link) {\n      s1 = "Switch to copy-and-paste view";\n      s2 = "Switch back to interactive view";\n      link.textContent = link.textContent.trim() == s1 ? s2: s1;\n      toggle(\'browserTraceback\', \'pastebinTraceback\');\n      return false;\n    }\n  </script>\n  \n</head>\n<body>\n<div id="summary">\n  <h1>ZeroDivisionError\n       at /app/add_stu_info/</h1>\n  <pre class="exception_value">division by zero</pre>\n  <table class="meta">\n\n    <tr>\n      <th>Request Method:</th>\n      <td>GET</td>\n    </tr>\n    <tr>\n      <th>Request URL:</th>\n      <td>http://127.0.0.1:8080/app/add_stu_info/</td>\n    </tr>\n\n    <tr>\n      <th>Django Version:</th>\n      <td>2.1.4</td>\n    </tr>\n\n    <tr>\n      <th>Exception Type:</th>\n      <td>ZeroDivisionError</td>\n    </tr>\n\n\n    <tr>\n      <th>Exception Value:</th>\n      <td><pre>division by zero</pre></td>\n    </tr>\n\n\n    <tr>\n      <th>Exception Location:</th>\n      <td>E:\\wordspace\\8.django\\day07\\app\\views.py in add_stu_info, line 95</td>\n    </tr>\n\n    <tr>\n      <th>Python Executable:</th>\n      <td>E:\\env\\djenv8\\Scripts\\python.exe</td>\n    </tr>\n    <tr>\n      <th>Python Version:</th>\n      <td>3.6.3</td>\n    </tr>\n    <tr>\n      <th>Python Path:</th>\n      <td><pre>[&#39;E:\\\\wordspace\\\\8.django\\\\day07&#39;,\n &#39;E:\\\\wordspace\\\\8.django\\\\day07&#39;,\n &#39;E:\\\\env\\\\djenv8\\\\Scripts\\\\python36.zip&#39;,\n &#39;E:\\\\env\\\\djenv8\\\\DLLs&#39;,\n &#39;E:\\\\env\\\\djenv8\\\\lib&#39;,\n &#39;E:\\\\env\\\\djenv8\\\\Scripts&#39;,\n &#39;D:\\\\python3\\\\Lib&#39;,\n &#39;D:\\\\python3\\\\DLLs&#39;,\n &#39;E:\\\\env\\\\djenv8&#39;,\n &#39;E:\\\\env\\\\djenv8\\\\lib\\\\site-packages&#39;]</pre></td>\n    </tr>\n    <tr>\n      <th>Server time:</th>\n      <td>Thu, 10 Jan 2019 07:59:03 +0000</td>\n    </tr>\n  </table>\n</div>\n\n\n\n\n<div id="traceback">\n  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">\n    Switch to copy-and-paste view</a></span>\n  </h2>\n  <div id="browserTraceback">\n    <ul class="traceback">\n      \n        \n        <li class="frame django">\n          <code>E:\\env\\djenv8\\lib\\site-packages\\django\\core\\handlers\\exception.py</code> in <code>inner</code>\n\n          \n            <div class="context" id="c71271752">\n              \n                <ol start="27" class="pre-context" id="pre71271752">\n                \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>    This decorator is automatically applied to all middleware to ensure that</pre></li>\n                \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>    no middleware leaks an exception and that the next middleware in the stack</pre></li>\n                \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>    can rely on getting a response instead of an exception.</pre></li>\n                \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>    &quot;&quot;&quot;</pre></li>\n                \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>    @wraps(get_response)</pre></li>\n                \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>    def inner(request):</pre></li>\n                \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>        try:</pre></li>\n                \n                </ol>\n              \n              <ol start="34" class="context-line">\n                <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>            response = get_response(request)</pre> <span>...</span></li>\n              </ol>\n              \n                <ol start=\'35\' class="post-context" id="post71271752">\n                  \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>        except Exception as exc:</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>            response = response_for_exception(request, exc)</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>        return response</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre>    return inner</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre></pre></li>\n                  \n                  <li onclick="toggle(\'pre71271752\', \'post71271752\')"><pre></pre></li>\n                  \n              </ol>\n              \n            </div>\n          \n\n          \n            <div class="commands">\n                \n                    <a href="#" onclick="return varToggle(this, \'71271752\')"><span>&#x25b6;</span> Local vars</a>\n                \n            </div>\n            <table class="vars" id="v71271752">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n                  <th>Value</th>\n                </tr>\n              </thead>\n              <tbody>\n                \n                  <tr>\n                    <td>exc</td>\n                    <td class="code"><pre>ZeroDivisionError(&#39;division by zero&#39;,)</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>get_response</td>\n                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x0000000003BBA9B0&gt;&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>request</td>\n                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/app/add_stu_info/&#39;&gt;</pre></td>\n                  </tr>\n                \n              </tbody>\n            </table>\n          \n        </li>\n      \n        \n        <li class="frame django">\n          <code>E:\\env\\djenv8\\lib\\site-packages\\django\\core\\handlers\\base.py</code> in <code>_get_response</code>\n\n          \n            <div class="context" id="c71271560">\n              \n                <ol start="119" class="pre-context" id="pre71271560">\n                \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>                break</pre></li>\n                \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre></pre></li>\n                \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>        if response is None:</pre></li>\n                \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>\n                \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>            try:</pre></li>\n                \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre></li>\n                \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>            except Exception as e:</pre></li>\n                \n                </ol>\n              \n              <ol start="126" class="context-line">\n                <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>                response = self.process_exception_by_middleware(e, request)</pre> <span>...</span></li>\n              </ol>\n              \n                <ol start=\'127\' class="post-context" id="post71271560">\n                  \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre></pre></li>\n                  \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>        # Complain if the view returned None (a common error).</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>        if response is None:</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>                view_name = callback.__name__</pre></li>\n                  \n                  <li onclick="toggle(\'pre71271560\', \'post71271560\')"><pre>            else:                                           # CBV</pre></li>\n                  \n              </ol>\n              \n            </div>\n          \n\n          \n            <div class="commands">\n                \n                    <a href="#" onclick="return varToggle(this, \'71271560\')"><span>&#x25b6;</span> Local vars</a>\n                \n            </div>\n            <table class="vars" id="v71271560">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n                  <th>Value</th>\n                </tr>\n              </thead>\n              <tbody>\n                \n                  <tr>\n                    <td>callback</td>\n                    <td class="code"><pre>&lt;function add_stu_info at 0x0000000003EFA400&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>callback_args</td>\n                    <td class="code"><pre>()</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>callback_kwargs</td>\n                    <td class="code"><pre>{}</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>middleware_method</td>\n                    <td class="code"><pre>&lt;bound method TestMiddlware2.process_view of &lt;utils.middleware.TestMiddlware2 object at 0x0000000003BBAA20&gt;&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>request</td>\n                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/app/add_stu_info/&#39;&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>resolver</td>\n                    <td class="code"><pre>&lt;URLResolver &#39;day04.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>resolver_match</td>\n                    <td class="code"><pre>ResolverMatch(func=app.views.add_stu_info, args=(), kwargs={}, url_name=add_stu_info, app_names=[&#39;app&#39;], namespaces=[&#39;app&#39;])</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>response</td>\n                    <td class="code"><pre>None</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>self</td>\n                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x0000000003BBA9B0&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>wrapped_callback</td>\n                    <td class="code"><pre>&lt;function add_stu_info at 0x0000000003EFA400&gt;</pre></td>\n                  </tr>\n                \n              </tbody>\n            </table>\n          \n        </li>\n      \n        \n        <li class="frame django">\n          <code>E:\\env\\djenv8\\lib\\site-packages\\django\\core\\handlers\\base.py</code> in <code>_get_response</code>\n\n          \n            <div class="context" id="c71202120">\n              \n                <ol start="117" class="pre-context" id="pre71202120">\n                \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>            response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li>\n                \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>            if response:</pre></li>\n                \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>                break</pre></li>\n                \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre></pre></li>\n                \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>        if response is None:</pre></li>\n                \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>\n                \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>            try:</pre></li>\n                \n                </ol>\n              \n              <ol start="124" class="context-line">\n                <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li>\n              </ol>\n              \n                <ol start=\'125\' class="post-context" id="post71202120">\n                  \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>            except Exception as e:</pre></li>\n                  \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>\n                  \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre></pre></li>\n                  \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>        # Complain if the view returned None (a common error).</pre></li>\n                  \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>        if response is None:</pre></li>\n                  \n                  <li onclick="toggle(\'pre71202120\', \'post71202120\')"><pre>            if isinstance(callback, types.FunctionType):    # FBV</pre></li>\n                  \n              </ol>\n              \n            </div>\n          \n\n          \n            <div class="commands">\n                \n                    <a href="#" onclick="return varToggle(this, \'71202120\')"><span>&#x25b6;</span> Local vars</a>\n                \n            </div>\n            <table class="vars" id="v71202120">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n                  <th>Value</th>\n                </tr>\n              </thead>\n              <tbody>\n                \n                  <tr>\n                    <td>callback</td>\n                    <td class="code"><pre>&lt;function add_stu_info at 0x0000000003EFA400&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>callback_args</td>\n                    <td class="code"><pre>()</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>callback_kwargs</td>\n                    <td class="code"><pre>{}</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>middleware_method</td>\n                    <td class="code"><pre>&lt;bound method TestMiddlware2.process_view of &lt;utils.middleware.TestMiddlware2 object at 0x0000000003BBAA20&gt;&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>request</td>\n                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/app/add_stu_info/&#39;&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>resolver</td>\n                    <td class="code"><pre>&lt;URLResolver &#39;day04.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>resolver_match</td>\n                    <td class="code"><pre>ResolverMatch(func=app.views.add_stu_info, args=(), kwargs={}, url_name=add_stu_info, app_names=[&#39;app&#39;], namespaces=[&#39;app&#39;])</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>response</td>\n                    <td class="code"><pre>None</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>self</td>\n                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x0000000003BBA9B0&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n                    <td>wrapped_callback</td>\n                    <td class="code"><pre>&lt;function add_stu_info at 0x0000000003EFA400&gt;</pre></td>\n                  </tr>\n                \n              </tbody>\n            </table>\n          \n        </li>\n      \n        \n        <li class="frame user">\n          <code>E:\\wordspace\\8.django\\day07\\app\\views.py</code> in <code>add_stu_info</code>\n\n          \n            <div class="context" id="c71203528">\n              \n                <ol start="88" class="pre-context" id="pre71203528">\n                \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>                               icon=icon)</pre></li>\n                \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>        # 3. \xe8\xb7\xb3\xe8\xbd\xac\xe5\x88\xb0\xe5\x88\x97\xe8\xa1\xa8\xe9\xa1\xb5\xe9\x9d\xa2</pre></li>\n                \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>        return HttpResponseRedirect(reverse(&#39;app:all_stu&#39;))</pre></li>\n                \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre></pre></li>\n                \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre></pre></li>\n                \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>def add_stu_info(request):</pre></li>\n                \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>    if request.method == &#39;GET&#39;:</pre></li>\n                \n                </ol>\n              \n              <ol start="95" class="context-line">\n                <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>        1/0</pre> <span>...</span></li>\n              </ol>\n              \n                <ol start=\'96\' class="post-context" id="post71203528">\n                  \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>        return render(request, &#39;add_stus.html&#39;)</pre></li>\n                  \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre></pre></li>\n                  \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>    if request.method == &#39;POST&#39;:</pre></li>\n                  \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>        # \xe5\xb0\x86\xe9\xa1\xb5\xe9\x9d\xa2\xe6\x8f\x90\xe4\xba\xa4\xe7\x9a\x84\xe5\x86\x85\xe5\xae\xb9\xe4\xba\xa4\xe7\xbb\x99StuForm\xe8\xa1\xa8\xe5\x8d\x95\xe5\x81\x9a\xe6\xa0\xa1\xe9\xaa\x8c</pre></li>\n                  \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>        form = StuForm(request.POST, request.FILES)</pre></li>\n                  \n                  <li onclick="toggle(\'pre71203528\', \'post71203528\')"><pre>        # \xe4\xbd\xbf\xe7\x94\xa8is_valid\xe8\xbf\x9b\xe8\xa1\x8c\xe5\x88\xa4\xe6\x96\xad\xe6\xa0\xa1\xe9\xaa\x8c\xe6\x98\xaf\xe5\x90\xa6\xe6\x88\x90\xe5\x8a\x9f\xef\xbc\x8c\xe5\xad\x97\xe6\xae\xb5\xe6\xa0\xa1\xe9\xaa\x8c\xe6\x88\x90\xe5\x8a\x9f\xe8\xbf\x94\xe5\x9b\x9eTrue\xef\xbc\x8c\xe5\x90\xa6\xe5\x88\x99False</pre></li>\n                  \n              </ol>\n              \n            </div>\n          \n\n          \n            <div class="commands">\n                \n                    <a href="#" onclick="return varToggle(this, \'71203528\')"><span>&#x25b6;</span> Local vars</a>\n                \n            </div>\n            <table class="vars" id="v71203528">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n                  <th>Value</th>\n                </tr>\n              </thead>\n              <tbody>\n                \n                  <tr>\n                    <td>request</td>\n                    <td class="code"><pre>&lt;WSGIRequest: GET &#39;/app/add_stu_info/&#39;&gt;</pre></td>\n                  </tr>\n                \n              </tbody>\n            </table>\n          \n        </li>\n      \n    </ul>\n  </div>\n  <form action="http://dpaste.com/" name="pasteform" id="pasteform" method="post">\n\n  <div id="pastebinTraceback" class="pastebin">\n    <input type="hidden" name="language" value="PythonConsole">\n    <input type="hidden" name="title"\n      value="ZeroDivisionError at /app/add_stu_info/">\n    <input type="hidden" name="source" value="Django Dpaste Agent">\n    <input type="hidden" name="poster" value="Django">\n    <textarea name="content" id="traceback_area" cols="140" rows="25">\nEnvironment:\n\n\nRequest Method: GET\nRequest URL: http://127.0.0.1:8080/app/add_stu_info/\n\nDjango Version: 2.1.4\nPython Version: 3.6.3\nInstalled Applications:\n[&#39;django.contrib.admin&#39;,\n &#39;django.contrib.auth&#39;,\n &#39;django.contrib.contenttypes&#39;,\n &#39;django.contrib.sessions&#39;,\n &#39;django.contrib.messages&#39;,\n &#39;django.contrib.staticfiles&#39;,\n &#39;app&#39;,\n &#39;user&#39;]\nInstalled Middleware:\n[&#39;django.middleware.security.SecurityMiddleware&#39;,\n &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,\n &#39;django.middleware.common.CommonMiddleware&#39;,\n &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,\n &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,\n &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,\n &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;,\n &#39;utils.middleware.TestMiddlware1&#39;,\n &#39;utils.middleware.TestMiddlware2&#39;,\n &#39;utils.middleware.LoggingMiddleware&#39;]\n\n\n\nTraceback:\n\nFile "E:\\env\\djenv8\\lib\\site-packages\\django\\core\\handlers\\exception.py" in inner\n  34.             response = get_response(request)\n\nFile "E:\\env\\djenv8\\lib\\site-packages\\django\\core\\handlers\\base.py" in _get_response\n  126.                 response = self.process_exception_by_middleware(e, request)\n\nFile "E:\\env\\djenv8\\lib\\site-packages\\django\\core\\handlers\\base.py" in _get_response\n  124.                 response = wrapped_callback(request, *callback_args, **callback_kwargs)\n\nFile "E:\\wordspace\\8.django\\day07\\app\\views.py" in add_stu_info\n  95.         1/0\n\nException Type: ZeroDivisionError at /app/add_stu_info/\nException Value: division by zero\n</textarea>\n  <br><br>\n  <input type="submit" value="Share this traceback on a public website">\n  </div>\n</form>\n</div>\n\n\n\n<div id="requestinfo">\n  <h2>Request information</h2>\n\n\n  \n    <h3 id="user-info">USER</h3>\n    <p>User object (1)</p>\n  \n\n  <h3 id="get-info">GET</h3>\n  \n    <p>No GET data</p>\n  \n\n  <h3 id="post-info">POST</h3>\n  \n    <p>No POST data</p>\n  \n  <h3 id="files-info">FILES</h3>\n  \n    <p>No FILES data</p>\n  \n\n\n  <h3 id="cookie-info">COOKIES</h3>\n  \n    <table class="req">\n      <thead>\n        <tr>\n          <th>Variable</th>\n          <th>Value</th>\n        </tr>\n      </thead>\n      <tbody>\n        \n          <tr>\n            <td>sessionid</td>\n            <td class="code"><pre>&#39;65sc1ylugm4yojcfp5preehe1f6u8xjz&#39;</pre></td>\n          </tr>\n        \n          <tr>\n            <td>csrftoken</td>\n            <td class="code"><pre>&#39;jAVw1G8t7RiuJGdsIhoDnHq4e80q0yi5iuEpw6vEdAA8tkBWjuPxAccgpE86LAZQ&#39;</pre></td>\n          </tr>\n        \n      </tbody>\n    </table>\n  \n\n  <h3 id="meta-info">META</h3>\n  <table class="req">\n    <thead>\n      <tr>\n        <th>Variable</th>\n        <th>Value</th>\n      </tr>\n    </thead>\n    <tbody>\n      \n        <tr>\n          <td>#ENVTSLOGSSS2192</td>\n          <td class="code"><pre>&#39;99828208&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>ALLUSERSPROFILE</td>\n          <td class="code"><pre>&#39;C:\\\\ProgramData&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>APPDATA</td>\n          <td class="code"><pre>&#39;C:\\\\Users\\\\Administrator\\\\AppData\\\\Roaming&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>COMMONPROGRAMFILES</td>\n          <td class="code"><pre>&#39;C:\\\\Program Files\\\\Common Files&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>COMMONPROGRAMFILES(X86)</td>\n          <td class="code"><pre>&#39;C:\\\\Program Files (x86)\\\\Common Files&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>COMMONPROGRAMW6432</td>\n          <td class="code"><pre>&#39;C:\\\\Program Files\\\\Common Files&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>COMPUTERNAME</td>\n          <td class="code"><pre>&#39;PC-201804170916&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>COMSPEC</td>\n          <td class="code"><pre>&#39;C:\\\\Windows\\\\system32\\\\cmd.exe&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CONTENT_LENGTH</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CONTENT_TYPE</td>\n          <td class="code"><pre>&#39;text/plain&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE</td>\n          <td class="code"><pre>&#39;jAVw1G8t7RiuJGdsIhoDnHq4e80q0yi5iuEpw6vEdAA8tkBWjuPxAccgpE86LAZQ&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DJANGO_SETTINGS_MODULE</td>\n          <td class="code"><pre>&#39;day04.settings&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FP_NO_HOST_CHECK</td>\n          <td class="code"><pre>&#39;NO&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>GATEWAY_INTERFACE</td>\n          <td class="code"><pre>&#39;CGI/1.1&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HOMEDRIVE</td>\n          <td class="code"><pre>&#39;C:&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HOMEPATH</td>\n          <td class="code"><pre>&#39;\\\\Users\\\\Administrator&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_ACCEPT</td>\n          <td class="code"><pre>&#39;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_ACCEPT_ENCODING</td>\n          <td class="code"><pre>&#39;gzip, deflate, br&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_ACCEPT_LANGUAGE</td>\n          <td class="code"><pre>&#39;zh-CN,zh;q=0.9,und;q=0.8,sq;q=0.7&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_CACHE_CONTROL</td>\n          <td class="code"><pre>&#39;max-age=0&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_CONNECTION</td>\n          <td class="code"><pre>&#39;keep-alive&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_COOKIE</td>\n          <td class="code"><pre>(&#39;sessionid=65sc1ylugm4yojcfp5preehe1f6u8xjz; &#39;\n &#39;csrftoken=jAVw1G8t7RiuJGdsIhoDnHq4e80q0yi5iuEpw6vEdAA8tkBWjuPxAccgpE86LAZQ&#39;)</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_HOST</td>\n          <td class="code"><pre>&#39;127.0.0.1:8080&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_UPGRADE_INSECURE_REQUESTS</td>\n          <td class="code"><pre>&#39;1&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>HTTP_USER_AGENT</td>\n          <td class="code"><pre>(&#39;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) &#39;\n &#39;Chrome/68.0.3440.106 Safari/537.36&#39;)</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOCALAPPDATA</td>\n          <td class="code"><pre>&#39;C:\\\\Users\\\\Administrator\\\\AppData\\\\Local&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGONSERVER</td>\n          <td class="code"><pre>&#39;\\\\\\\\PC-201804170916&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>NUMBER_OF_PROCESSORS</td>\n          <td class="code"><pre>&#39;4&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>OS</td>\n          <td class="code"><pre>&#39;Windows_NT&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PATH</td>\n          <td class="code"><pre>(&#39;C:\\\\Program Files (x86)\\\\Common &#39;\n &#39;Files\\\\NetSarang;C:\\\\Windows\\\\system32;C:\\\\Windows;C:\\\\Windows\\\\System32\\\\Wbem;C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;D:\\\\python37\\\\;D:\\\\instal_soft\\\\Git\\\\cmd;C:\\\\Program &#39;\n &#39;Files (x86)\\\\Windows Kits\\\\8.1\\\\Windows Performance &#39;\n &#39;Toolkit\\\\;D:\\\\MySql\\\\bin;D:\\\\instal_soft\\\\nodejs\\\\;D:\\\\python37\\\\Scripts\\\\;D:\\\\python37\\\\;C:\\\\Program &#39;\n &#39;Files (x86)\\\\MySQL\\\\MySQL Server 4.1\\\\bin;C:\\\\Program Files &#39;\n &#39;(x86)\\\\Google\\\\Chrome\\\\Application;C:\\\\Users\\\\Administrator\\\\AppData\\\\Roaming\\\\npm;E:\\\\env\\\\djenv8\\\\Scripts&#39;)</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PATHEXT</td>\n          <td class="code"><pre>&#39;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PATH_INFO</td>\n          <td class="code"><pre>&#39;/app/add_stu_info/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROCESSOR_ARCHITECTURE</td>\n          <td class="code"><pre>&#39;AMD64&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROCESSOR_IDENTIFIER</td>\n          <td class="code"><pre>&#39;Intel64 Family 6 Model 60 Stepping 3, GenuineIntel&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROCESSOR_LEVEL</td>\n          <td class="code"><pre>&#39;6&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROCESSOR_REVISION</td>\n          <td class="code"><pre>&#39;3c03&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROGRAMDATA</td>\n          <td class="code"><pre>&#39;C:\\\\ProgramData&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROGRAMFILES</td>\n          <td class="code"><pre>&#39;C:\\\\Program Files&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROGRAMFILES(X86)</td>\n          <td class="code"><pre>&#39;C:\\\\Program Files (x86)&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROGRAMW6432</td>\n          <td class="code"><pre>&#39;C:\\\\Program Files&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PROMPT</td>\n          <td class="code"><pre>&#39;(djenv8) $P$G&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PSMODULEPATH</td>\n          <td class="code"><pre>&#39;C:\\\\Windows\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules\\\\&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PUBLIC</td>\n          <td class="code"><pre>&#39;C:\\\\Users\\\\Public&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PYCHARM_HOSTED</td>\n          <td class="code"><pre>&#39;1&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PYTHONIOENCODING</td>\n          <td class="code"><pre>&#39;UTF-8&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PYTHONPATH</td>\n          <td class="code"><pre>&#39;E:\\\\wordspace\\\\8.django\\\\day07&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PYTHONUNBUFFERED</td>\n          <td class="code"><pre>&#39;1&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>QUERY_STRING</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>REMOTE_ADDR</td>\n          <td class="code"><pre>&#39;127.0.0.1&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>REMOTE_HOST</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>REQUEST_METHOD</td>\n          <td class="code"><pre>&#39;GET&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>RUN_MAIN</td>\n          <td class="code"><pre>&#39;true&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SCRIPT_NAME</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SERVER_NAME</td>\n          <td class="code"><pre>&#39;PC-201804170916&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SERVER_PORT</td>\n          <td class="code"><pre>&#39;8080&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SERVER_PROTOCOL</td>\n          <td class="code"><pre>&#39;HTTP/1.1&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SERVER_SOFTWARE</td>\n          <td class="code"><pre>&#39;WSGIServer/0.2&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSIONNAME</td>\n          <td class="code"><pre>&#39;Console&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SYSTEMDRIVE</td>\n          <td class="code"><pre>&#39;C:&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SYSTEMROOT</td>\n          <td class="code"><pre>&#39;C:\\\\Windows&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TEMP</td>\n          <td class="code"><pre>&#39;C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TMP</td>\n          <td class="code"><pre>&#39;C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USERDOMAIN</td>\n          <td class="code"><pre>&#39;PC-201804170916&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USERNAME</td>\n          <td class="code"><pre>&#39;Administrator&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USERPROFILE</td>\n          <td class="code"><pre>&#39;C:\\\\Users\\\\Administrator&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>VIRTUAL_ENV</td>\n          <td class="code"><pre>&#39;E:\\\\env\\\\djenv8&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>VS140COMNTOOLS</td>\n          <td class="code"><pre>&#39;C:\\\\Program Files (x86)\\\\Microsoft Visual Studio 14.0\\\\Common7\\\\Tools\\\\&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>WINDIR</td>\n          <td class="code"><pre>&#39;C:\\\\Windows&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>WINDOWS_TRACING_FLAGS</td>\n          <td class="code"><pre>&#39;3&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>WINDOWS_TRACING_LOGFILE</td>\n          <td class="code"><pre>&#39;C:\\\\BVTBin\\\\Tests\\\\installpackage\\\\csilogfile.log&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>_OLD_VIRTUAL_PATH</td>\n          <td class="code"><pre>(&#39;C:\\\\Program Files (x86)\\\\Common &#39;\n &#39;Files\\\\NetSarang;C:\\\\Windows\\\\system32;C:\\\\Windows;C:\\\\Windows\\\\System32\\\\Wbem;C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\;D:\\\\python37\\\\;D:\\\\instal_soft\\\\Git\\\\cmd;C:\\\\Program &#39;\n &#39;Files (x86)\\\\Windows Kits\\\\8.1\\\\Windows Performance &#39;\n &#39;Toolkit\\\\;D:\\\\MySql\\\\bin;D:\\\\instal_soft\\\\nodejs\\\\;D:\\\\python37\\\\Scripts\\\\;D:\\\\python37\\\\;C:\\\\Program &#39;\n &#39;Files (x86)\\\\MySQL\\\\MySQL Server 4.1\\\\bin;C:\\\\Program Files &#39;\n &#39;(x86)\\\\Google\\\\Chrome\\\\Application;C:\\\\Users\\\\Administrator\\\\AppData\\\\Roaming\\\\npm&#39;)</pre></td>\n        </tr>\n      \n        <tr>\n          <td>_OLD_VIRTUAL_PROMPT</td>\n          <td class="code"><pre>&#39;$P$G&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.errors</td>\n          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#39;&lt;stderr&gt;&#39; mode=&#39;w&#39; encoding=&#39;UTF-8&#39;&gt;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.file_wrapper</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.input</td>\n          <td class="code"><pre>&lt;_io.BufferedReader name=768&gt;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.multiprocess</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.multithread</td>\n          <td class="code"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.run_once</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.url_scheme</td>\n          <td class="code"><pre>&#39;http&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.version</td>\n          <td class="code"><pre>(1, 0)</pre></td>\n        </tr>\n      \n    </tbody>\n  </table>\n\n\n  <h3 id="settings-info">Settings</h3>\n  <h4>Using settings module <code>day04.settings</code></h4>\n  <table class="req">\n    <thead>\n      <tr>\n        <th>Setting</th>\n        <th>Value</th>\n      </tr>\n    </thead>\n    <tbody>\n      \n        <tr>\n          <td>ABSOLUTE_URL_OVERRIDES</td>\n          <td class="code"><pre>{}</pre></td>\n        </tr>\n      \n        <tr>\n          <td>ADMINS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>ALLOWED_HOSTS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>APPEND_SLASH</td>\n          <td class="code"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>AUTHENTICATION_BACKENDS</td>\n          <td class="code"><pre>[&#39;django.contrib.auth.backends.ModelBackend&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>AUTH_PASSWORD_VALIDATORS</td>\n          <td class="code"><pre>&#39;********************&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>AUTH_USER_MODEL</td>\n          <td class="code"><pre>&#39;auth.User&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>BASE_DIR</td>\n          <td class="code"><pre>&#39;E:\\\\wordspace\\\\8.django\\\\day07&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CACHES</td>\n          <td class="code"><pre>{&#39;default&#39;: {&#39;BACKEND&#39;: &#39;django.core.cache.backends.locmem.LocMemCache&#39;}}</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CACHE_MIDDLEWARE_ALIAS</td>\n          <td class="code"><pre>&#39;default&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>\n          <td class="code"><pre>&#39;********************&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CACHE_MIDDLEWARE_SECONDS</td>\n          <td class="code"><pre>600</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_AGE</td>\n          <td class="code"><pre>31449600</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_DOMAIN</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_HTTPONLY</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_NAME</td>\n          <td class="code"><pre>&#39;csrftoken&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_PATH</td>\n          <td class="code"><pre>&#39;/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_SAMESITE</td>\n          <td class="code"><pre>&#39;Lax&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_SECURE</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_FAILURE_VIEW</td>\n          <td class="code"><pre>&#39;django.views.csrf.csrf_failure&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_HEADER_NAME</td>\n          <td class="code"><pre>&#39;HTTP_X_CSRFTOKEN&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_TRUSTED_ORIGINS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_USE_SESSIONS</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATABASES</td>\n          <td class="code"><pre>{&#39;default&#39;: {&#39;ATOMIC_REQUESTS&#39;: False,\n             &#39;AUTOCOMMIT&#39;: True,\n             &#39;CONN_MAX_AGE&#39;: 0,\n             &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,\n             &#39;HOST&#39;: &#39;47.106.180.185&#39;,\n             &#39;NAME&#39;: &#39;dj8&#39;,\n             &#39;OPTIONS&#39;: {&#39;isolation_level&#39;: None},\n             &#39;PASSWORD&#39;: &#39;********************&#39;,\n             &#39;PORT&#39;: 3306,\n             &#39;TEST&#39;: {&#39;CHARSET&#39;: None,\n                      &#39;COLLATION&#39;: None,\n                      &#39;MIRROR&#39;: None,\n                      &#39;NAME&#39;: None},\n             &#39;TIME_ZONE&#39;: None,\n             &#39;USER&#39;: &#39;root&#39;}}</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATABASE_ROUTERS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>\n          <td class="code"><pre>2621440</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>\n          <td class="code"><pre>1000</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATETIME_FORMAT</td>\n          <td class="code"><pre>&#39;N j, Y, P&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATETIME_INPUT_FORMATS</td>\n          <td class="code"><pre>[&#39;%Y-%m-%d %H:%M:%S&#39;,\n &#39;%Y-%m-%d %H:%M:%S.%f&#39;,\n &#39;%Y-%m-%d %H:%M&#39;,\n &#39;%Y-%m-%d&#39;,\n &#39;%m/%d/%Y %H:%M:%S&#39;,\n &#39;%m/%d/%Y %H:%M:%S.%f&#39;,\n &#39;%m/%d/%Y %H:%M&#39;,\n &#39;%m/%d/%Y&#39;,\n &#39;%m/%d/%y %H:%M:%S&#39;,\n &#39;%m/%d/%y %H:%M:%S.%f&#39;,\n &#39;%m/%d/%y %H:%M&#39;,\n &#39;%m/%d/%y&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATE_FORMAT</td>\n          <td class="code"><pre>&#39;N j, Y&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATE_INPUT_FORMATS</td>\n          <td class="code"><pre>[&#39;%Y-%m-%d&#39;,\n &#39;%m/%d/%Y&#39;,\n &#39;%m/%d/%y&#39;,\n &#39;%b %d %Y&#39;,\n &#39;%b %d, %Y&#39;,\n &#39;%d %b %Y&#39;,\n &#39;%d %b, %Y&#39;,\n &#39;%B %d %Y&#39;,\n &#39;%B %d, %Y&#39;,\n &#39;%d %B %Y&#39;,\n &#39;%d %B, %Y&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEBUG</td>\n          <td class="code"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DECIMAL_SEPARATOR</td>\n          <td class="code"><pre>&#39;.&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEFAULT_CHARSET</td>\n          <td class="code"><pre>&#39;utf-8&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEFAULT_CONTENT_TYPE</td>\n          <td class="code"><pre>&#39;text/html&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>\n          <td class="code"><pre>&#39;django.views.debug.SafeExceptionReporterFilter&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEFAULT_FILE_STORAGE</td>\n          <td class="code"><pre>&#39;django.core.files.storage.FileSystemStorage&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEFAULT_FROM_EMAIL</td>\n          <td class="code"><pre>&#39;webmaster@localhost&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEFAULT_INDEX_TABLESPACE</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DEFAULT_TABLESPACE</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DISALLOWED_USER_AGENTS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_BACKEND</td>\n          <td class="code"><pre>&#39;django.core.mail.backends.smtp.EmailBackend&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_HOST</td>\n          <td class="code"><pre>&#39;localhost&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_HOST_PASSWORD</td>\n          <td class="code"><pre>&#39;********************&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_HOST_USER</td>\n          <td class="code"><pre>&#39;&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_PORT</td>\n          <td class="code"><pre>25</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_SSL_CERTFILE</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_SSL_KEYFILE</td>\n          <td class="code"><pre>&#39;********************&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_SUBJECT_PREFIX</td>\n          <td class="code"><pre>&#39;[Django] &#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_TIMEOUT</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_USE_LOCALTIME</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_USE_SSL</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_USE_TLS</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FILE_CHARSET</td>\n          <td class="code"><pre>&#39;utf-8&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_HANDLERS</td>\n          <td class="code"><pre>[&#39;django.core.files.uploadhandler.MemoryFileUploadHandler&#39;,\n &#39;django.core.files.uploadhandler.TemporaryFileUploadHandler&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>\n          <td class="code"><pre>2621440</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_PERMISSIONS</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_TEMP_DIR</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FIRST_DAY_OF_WEEK</td>\n          <td class="code"><pre>0</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FIXTURE_DIRS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FORCE_SCRIPT_NAME</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FORMAT_MODULE_PATH</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FORM_RENDERER</td>\n          <td class="code"><pre>&#39;django.forms.renderers.DjangoTemplates&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>IGNORABLE_404_URLS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>INSTALLED_APPS</td>\n          <td class="code"><pre>[&#39;django.contrib.admin&#39;,\n &#39;django.contrib.auth&#39;,\n &#39;django.contrib.contenttypes&#39;,\n &#39;django.contrib.sessions&#39;,\n &#39;django.contrib.messages&#39;,\n &#39;django.contrib.staticfiles&#39;,\n &#39;app&#39;,\n &#39;user&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>INTERNAL_IPS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGES</td>\n          <td class="code"><pre>[(&#39;af&#39;, &#39;Afrikaans&#39;),\n (&#39;ar&#39;, &#39;Arabic&#39;),\n (&#39;ast&#39;, &#39;Asturian&#39;),\n (&#39;az&#39;, &#39;Azerbaijani&#39;),\n (&#39;bg&#39;, &#39;Bulgarian&#39;),\n (&#39;be&#39;, &#39;Belarusian&#39;),\n (&#39;bn&#39;, &#39;Bengali&#39;),\n (&#39;br&#39;, &#39;Breton&#39;),\n (&#39;bs&#39;, &#39;Bosnian&#39;),\n (&#39;ca&#39;, &#39;Catalan&#39;),\n (&#39;cs&#39;, &#39;Czech&#39;),\n (&#39;cy&#39;, &#39;Welsh&#39;),\n (&#39;da&#39;, &#39;Danish&#39;),\n (&#39;de&#39;, &#39;German&#39;),\n (&#39;dsb&#39;, &#39;Lower Sorbian&#39;),\n (&#39;el&#39;, &#39;Greek&#39;),\n (&#39;en&#39;, &#39;English&#39;),\n (&#39;en-au&#39;, &#39;Australian English&#39;),\n (&#39;en-gb&#39;, &#39;British English&#39;),\n (&#39;eo&#39;, &#39;Esperanto&#39;),\n (&#39;es&#39;, &#39;Spanish&#39;),\n (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;),\n (&#39;es-co&#39;, &#39;Colombian Spanish&#39;),\n (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;),\n (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;),\n (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;),\n (&#39;et&#39;, &#39;Estonian&#39;),\n (&#39;eu&#39;, &#39;Basque&#39;),\n (&#39;fa&#39;, &#39;Persian&#39;),\n (&#39;fi&#39;, &#39;Finnish&#39;),\n (&#39;fr&#39;, &#39;French&#39;),\n (&#39;fy&#39;, &#39;Frisian&#39;),\n (&#39;ga&#39;, &#39;Irish&#39;),\n (&#39;gd&#39;, &#39;Scottish Gaelic&#39;),\n (&#39;gl&#39;, &#39;Galician&#39;),\n (&#39;he&#39;, &#39;Hebrew&#39;),\n (&#39;hi&#39;, &#39;Hindi&#39;),\n (&#39;hr&#39;, &#39;Croatian&#39;),\n (&#39;hsb&#39;, &#39;Upper Sorbian&#39;),\n (&#39;hu&#39;, &#39;Hungarian&#39;),\n (&#39;ia&#39;, &#39;Interlingua&#39;),\n (&#39;id&#39;, &#39;Indonesian&#39;),\n (&#39;io&#39;, &#39;Ido&#39;),\n (&#39;is&#39;, &#39;Icelandic&#39;),\n (&#39;it&#39;, &#39;Italian&#39;),\n (&#39;ja&#39;, &#39;Japanese&#39;),\n (&#39;ka&#39;, &#39;Georgian&#39;),\n (&#39;kab&#39;, &#39;Kabyle&#39;),\n (&#39;kk&#39;, &#39;Kazakh&#39;),\n (&#39;km&#39;, &#39;Khmer&#39;),\n (&#39;kn&#39;, &#39;Kannada&#39;),\n (&#39;ko&#39;, &#39;Korean&#39;),\n (&#39;lb&#39;, &#39;Luxembourgish&#39;),\n (&#39;lt&#39;, &#39;Lithuanian&#39;),\n (&#39;lv&#39;, &#39;Latvian&#39;),\n (&#39;mk&#39;, &#39;Macedonian&#39;),\n (&#39;ml&#39;, &#39;Malayalam&#39;),\n (&#39;mn&#39;, &#39;Mongolian&#39;),\n (&#39;mr&#39;, &#39;Marathi&#39;),\n (&#39;my&#39;, &#39;Burmese&#39;),\n (&#39;nb&#39;, &#39;Norwegian Bokm\xc3\xa5l&#39;),\n (&#39;ne&#39;, &#39;Nepali&#39;),\n (&#39;nl&#39;, &#39;Dutch&#39;),\n (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;),\n (&#39;os&#39;, &#39;Ossetic&#39;),\n (&#39;pa&#39;, &#39;Punjabi&#39;),\n (&#39;pl&#39;, &#39;Polish&#39;),\n (&#39;pt&#39;, &#39;Portuguese&#39;),\n (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;),\n (&#39;ro&#39;, &#39;Romanian&#39;),\n (&#39;ru&#39;, &#39;Russian&#39;),\n (&#39;sk&#39;, &#39;Slovak&#39;),\n (&#39;sl&#39;, &#39;Slovenian&#39;),\n (&#39;sq&#39;, &#39;Albanian&#39;),\n (&#39;sr&#39;, &#39;Serbian&#39;),\n (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;),\n (&#39;sv&#39;, &#39;Swedish&#39;),\n (&#39;sw&#39;, &#39;Swahili&#39;),\n (&#39;ta&#39;, &#39;Tamil&#39;),\n (&#39;te&#39;, &#39;Telugu&#39;),\n (&#39;th&#39;, &#39;Thai&#39;),\n (&#39;tr&#39;, &#39;Turkish&#39;),\n (&#39;tt&#39;, &#39;Tatar&#39;),\n (&#39;udm&#39;, &#39;Udmurt&#39;),\n (&#39;uk&#39;, &#39;Ukrainian&#39;),\n (&#39;ur&#39;, &#39;Urdu&#39;),\n (&#39;vi&#39;, &#39;Vietnamese&#39;),\n (&#39;zh-hans&#39;, &#39;Simplified Chinese&#39;),\n (&#39;zh-hant&#39;, &#39;Traditional Chinese&#39;)]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGES_BIDI</td>\n          <td class="code"><pre>[&#39;he&#39;, &#39;ar&#39;, &#39;fa&#39;, &#39;ur&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGE_CODE</td>\n          <td class="code"><pre>&#39;en-us&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGE_COOKIE_AGE</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGE_COOKIE_DOMAIN</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGE_COOKIE_NAME</td>\n          <td class="code"><pre>&#39;django_language&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGE_COOKIE_PATH</td>\n          <td class="code"><pre>&#39;/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOCALE_PATHS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGGING</td>\n          <td class="code"><pre>{&#39;disable_existing_loggers&#39;: False,\n &#39;formatters&#39;: {&#39;default&#39;: {&#39;format&#39;: &#39;%(asctime)s %(message)s&#39;},\n                &#39;simple&#39;: {&#39;format&#39;: &#39;%(message)s&#39;}},\n &#39;handlers&#39;: {&#39;console&#39;: {&#39;class&#39;: &#39;logging.handlers.RotatingFileHandler&#39;,\n                          &#39;filename&#39;: &#39;E:\\\\wordspace\\\\8.django\\\\day07\\\\log/sys.log&#39;,\n                          &#39;formatter&#39;: &#39;default&#39;,\n                          &#39;level&#39;: &#39;INFO&#39;,\n                          &#39;maxBytes&#39;: 5242880}},\n &#39;loggers&#39;: {&#39;&#39;: {&#39;handlers&#39;: [&#39;console&#39;], &#39;level&#39;: &#39;INFO&#39;}},\n &#39;version&#39;: 1}</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGGING_CONFIG</td>\n          <td class="code"><pre>&#39;logging.config.dictConfig&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGIN_REDIRECT_URL</td>\n          <td class="code"><pre>&#39;/accounts/profile/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGIN_URL</td>\n          <td class="code"><pre>&#39;/accounts/login/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGOUT_REDIRECT_URL</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOG_PATH</td>\n          <td class="code"><pre>&#39;E:\\\\wordspace\\\\8.django\\\\day07\\\\log&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MANAGERS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MEDIA_ROOT</td>\n          <td class="code"><pre>&#39;E:\\\\wordspace\\\\8.django\\\\day07\\\\media&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MEDIA_URL</td>\n          <td class="code"><pre>&#39;/media/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MESSAGE_STORAGE</td>\n          <td class="code"><pre>&#39;django.contrib.messages.storage.fallback.FallbackStorage&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MIDDLEWARE</td>\n          <td class="code"><pre>[&#39;django.middleware.security.SecurityMiddleware&#39;,\n &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,\n &#39;django.middleware.common.CommonMiddleware&#39;,\n &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,\n &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,\n &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,\n &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;,\n &#39;utils.middleware.TestMiddlware1&#39;,\n &#39;utils.middleware.TestMiddlware2&#39;,\n &#39;utils.middleware.LoggingMiddleware&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MIGRATION_MODULES</td>\n          <td class="code"><pre>{}</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MONTH_DAY_FORMAT</td>\n          <td class="code"><pre>&#39;F j&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>NUMBER_GROUPING</td>\n          <td class="code"><pre>0</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PASSWORD_HASHERS</td>\n          <td class="code"><pre>&#39;********************&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PASSWORD_RESET_TIMEOUT_DAYS</td>\n          <td class="code"><pre>&#39;********************&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>PREPEND_WWW</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>ROOT_URLCONF</td>\n          <td class="code"><pre>&#39;day04.urls&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECRET_KEY</td>\n          <td class="code"><pre>&#39;********************&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_BROWSER_XSS_FILTER</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_HSTS_PRELOAD</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_HSTS_SECONDS</td>\n          <td class="code"><pre>0</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_PROXY_SSL_HEADER</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_REDIRECT_EXEMPT</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_SSL_HOST</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_SSL_REDIRECT</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SERVER_EMAIL</td>\n          <td class="code"><pre>&#39;root@localhost&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_CACHE_ALIAS</td>\n          <td class="code"><pre>&#39;default&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_AGE</td>\n          <td class="code"><pre>1209600</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_DOMAIN</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_HTTPONLY</td>\n          <td class="code"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_NAME</td>\n          <td class="code"><pre>&#39;sessionid&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_PATH</td>\n          <td class="code"><pre>&#39;/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_SAMESITE</td>\n          <td class="code"><pre>&#39;Lax&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_SECURE</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_ENGINE</td>\n          <td class="code"><pre>&#39;django.contrib.sessions.backends.db&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_FILE_PATH</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_SAVE_EVERY_REQUEST</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_SERIALIZER</td>\n          <td class="code"><pre>&#39;django.contrib.sessions.serializers.JSONSerializer&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SETTINGS_MODULE</td>\n          <td class="code"><pre>&#39;day04.settings&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SHORT_DATETIME_FORMAT</td>\n          <td class="code"><pre>&#39;m/d/Y P&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SHORT_DATE_FORMAT</td>\n          <td class="code"><pre>&#39;m/d/Y&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SIGNING_BACKEND</td>\n          <td class="code"><pre>&#39;django.core.signing.TimestampSigner&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SILENCED_SYSTEM_CHECKS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>STATICFILES_DIRS</td>\n          <td class="code"><pre>[&#39;E:\\\\wordspace\\\\8.django\\\\day07\\\\static&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>STATICFILES_FINDERS</td>\n          <td class="code"><pre>[&#39;django.contrib.staticfiles.finders.FileSystemFinder&#39;,\n &#39;django.contrib.staticfiles.finders.AppDirectoriesFinder&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>STATICFILES_STORAGE</td>\n          <td class="code"><pre>&#39;django.contrib.staticfiles.storage.StaticFilesStorage&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>STATIC_ROOT</td>\n          <td class="code"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>STATIC_URL</td>\n          <td class="code"><pre>&#39;/static/&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TEMPLATES</td>\n          <td class="code"><pre>[{&#39;APP_DIRS&#39;: True,\n  &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,\n  &#39;DIRS&#39;: [&#39;E:\\\\wordspace\\\\8.django\\\\day07\\\\templates&#39;],\n  &#39;OPTIONS&#39;: {&#39;context_processors&#39;: [&#39;django.template.context_processors.debug&#39;,\n                                     &#39;django.template.context_processors.request&#39;,\n                                     &#39;django.contrib.auth.context_processors.auth&#39;,\n                                     &#39;django.contrib.messages.context_processors.messages&#39;]}}]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TEST_NON_SERIALIZED_APPS</td>\n          <td class="code"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TEST_RUNNER</td>\n          <td class="code"><pre>&#39;django.test.runner.DiscoverRunner&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>THOUSAND_SEPARATOR</td>\n          <td class="code"><pre>&#39;,&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TIME_FORMAT</td>\n          <td class="code"><pre>&#39;P&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TIME_INPUT_FORMATS</td>\n          <td class="code"><pre>[&#39;%H:%M:%S&#39;, &#39;%H:%M:%S.%f&#39;, &#39;%H:%M&#39;]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>TIME_ZONE</td>\n          <td class="code"><pre>&#39;UTC&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USE_I18N</td>\n          <td class="code"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USE_L10N</td>\n          <td class="code"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USE_THOUSAND_SEPARATOR</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USE_TZ</td>\n          <td class="code"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USE_X_FORWARDED_HOST</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USE_X_FORWARDED_PORT</td>\n          <td class="code"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>WSGI_APPLICATION</td>\n          <td class="code"><pre>&#39;day04.wsgi.application&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>X_FRAME_OPTIONS</td>\n          <td class="code"><pre>&#39;SAMEORIGIN&#39;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>YEAR_MONTH_FORMAT</td>\n          <td class="code"><pre>&#39;F Y&#39;</pre></td>\n        </tr>\n      \n    </tbody>\n  </table>\n\n</div>\n\n  <div id="explanation">\n    <p>\n      You\'re seeing this error because you have <code>DEBUG = True</code> in your\n      Django settings file. Change that to <code>False</code>, and Django will\n      display a standard page generated by the handler for this status code.\n    </p>\n  </div>\n\n</body>\n</html>\n' 0.07000398635864258
+2019-01-11 10:09:55,557 /user GET 404 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /user</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://127.0.0.1:8080/user</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>day04.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                app/\n                \n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n          </li>\n        \n          <li>\n            \n                ^media\\/(?P&lt;path&gt;.*)$\n                \n            \n          </li>\n        \n      </ol>\n      <p>\n        \n        The current path, <code>user</code>, didn\'t match any of these.\n      </p>\n    \n  </div>\n\n  <div id="explanation">\n    <p>\n      You\'re seeing this error because you have <code>DEBUG = True</code> in\n      your Django settings file. Change that to <code>False</code>, and Django\n      will display a standard 404 page.\n    </p>\n  </div>\n</body>\n</html>\n' 0.062003374099731445
+2019-01-11 10:09:55,557 Not Found: /user
+2019-01-11 10:09:55,929 /favicon.ico GET 404 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /favicon.ico</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://127.0.0.1:8080/favicon.ico</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>day04.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                app/\n                \n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n          </li>\n        \n          <li>\n            \n                ^media\\/(?P&lt;path&gt;.*)$\n                \n            \n          </li>\n        \n      </ol>\n      <p>\n        \n        The current path, <code>favicon.ico</code>, didn\'t match any of these.\n      </p>\n    \n  </div>\n\n  <div id="explanation">\n    <p>\n      You\'re seeing this error because you have <code>DEBUG = True</code> in\n      your Django settings file. Change that to <code>False</code>, and Django\n      will display a standard 404 page.\n    </p>\n  </div>\n</body>\n</html>\n' 0.004000425338745117
+2019-01-11 10:09:55,930 Not Found: /favicon.ico
+2019-01-11 10:10:08,187 /user/ GET 404 b'<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <title>Page not found at /user/</title>\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    table { border:none; border-collapse: collapse; width:100%; }\n    td, th { vertical-align:top; padding:2px 3px; }\n    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    #info { background:#f6f6f6; }\n    #info ol { margin: 0.5em 4em; }\n    #info ol li { font-family: monospace; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n  <div id="summary">\n    <h1>Page not found <span>(404)</span></h1>\n    <table class="meta">\n      <tr>\n        <th>Request Method:</th>\n        <td>GET</td>\n      </tr>\n      <tr>\n        <th>Request URL:</th>\n        <td>http://127.0.0.1:8080/user/</td>\n      </tr>\n      \n    </table>\n  </div>\n  <div id="info">\n    \n      <p>\n      Using the URLconf defined in <code>day04.urls</code>,\n      Django tried these URL patterns, in this order:\n      </p>\n      <ol>\n        \n          <li>\n            \n                admin/\n                \n            \n          </li>\n        \n          <li>\n            \n                app/\n                \n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                login/\n                [name=\'login\']\n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                index/\n                [name=\'index\']\n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                logout/\n                [name=\'logout\']\n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                register/\n                [name=\'register\']\n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                my_login/\n                [name=\'my_login\']\n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                hindex/\n                [name=\'hindex\']\n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                my_logout/\n                [name=\'my_logout\']\n            \n          </li>\n        \n          <li>\n            \n                user/\n                \n            \n                ^student/$\n                [name=\'student-list\']\n            \n          </li>\n        \n          <li>\n            \n                ^media\\/(?P&lt;path&gt;.*)$\n                \n            \n          </li>\n        \n      </ol>\n      <p>\n        \n        The current path, <code>user/</code>, didn\'t match any of these.\n      </p>\n    \n  </div>\n\n  <div id="explanation">\n    <p>\n      You\'re seeing this error because you have <code>DEBUG = True</code> in\n      your Django settings file. Change that to <code>False</code>, and Django\n      will display a standard 404 page.\n    </p>\n  </div>\n</body>\n</html>\n' 0.004000186920166016
+2019-01-11 10:10:08,187 Not Found: /user/
+2019-01-11 10:10:37,022 /user/my_login/ GET 200 b'\n\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <title>Title</title>\n    \n    \n\n    \n    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>\n\n</head>\n<body>\n    \n    <form action="" method="post">\n        <p>\xe5\xa7\x93\xe5\x90\x8d:<input type="text" name="username"></p>\n        <p>\xe5\xaf\x86\xe7\xa0\x81:<input type="text" name="password"></p>\n        <p><input type="submit" value="\xe6\x8f\x90\xe4\xba\xa4"></p>\n    </form>\n\n</body>\n</html>' 0.08800506591796875
+2019-01-11 10:10:51,660 Forbidden (CSRF token missing or incorrect.): /user/my_login/
+2019-01-11 10:10:51,660 /user/my_login/ POST 403 b'\n<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta http-equiv="content-type" content="text/html; charset=utf-8">\n  <meta name="robots" content="NONE,NOARCHIVE">\n  <title>403 Forbidden</title>\n  <style type="text/css">\n    html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body * * { padding:0; }\n    body { font:small sans-serif; background:#eee; color:#000; }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal; margin-bottom:.4em; }\n    h1 span { font-size:60%; color:#666; font-weight:normal; }\n    #info { background:#f6f6f6; }\n    #info ul { margin: 0.5em 4em; }\n    #info p, #summary p { padding-top:10px; }\n    #summary { background: #ffc; }\n    #explanation { background:#eee; border-bottom: 0px none; }\n  </style>\n</head>\n<body>\n<div id="summary">\n  <h1>Forbidden <span>(403)</span></h1>\n  <p>CSRF verification failed. Request aborted.</p>\n\n\n</div>\n\n<div id="info">\n  <h2>Help</h2>\n    \n    <p>Reason given for failure:</p>\n    <pre>\n    CSRF token missing or incorrect.\n    </pre>\n    \n\n  <p>In general, this can occur when there is a genuine Cross Site Request Forgery, or when\n  <a\n  href="https://docs.djangoproject.com/en/2.1/ref/csrf/">Django\'s\n  CSRF mechanism</a> has not been used correctly.  For POST forms, you need to\n  ensure:</p>\n\n  <ul>\n    <li>Your browser is accepting cookies.</li>\n\n    <li>The view function passes a <code>request</code> to the template\'s <a\n    href="https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render"><code>render</code></a>\n    method.</li>\n\n    <li>In the template, there is a <code>{% csrf_token\n    %}</code> template tag inside each POST form that\n    targets an internal URL.</li>\n\n    <li>If you are not using <code>CsrfViewMiddleware</code>, then you must use\n    <code>csrf_protect</code> on any views that use the <code>csrf_token</code>\n    template tag, as well as those that accept the POST data.</li>\n\n    <li>The form has a valid CSRF token. After logging in in another browser\n    tab or hitting the back button after a login, you may need to reload the\n    page with the form, because the token is rotated after a login.</li>\n  </ul>\n\n  <p>You\'re seeing the help section of this page because you have <code>DEBUG =\n  True</code> in your Django settings file. Change that to <code>False</code>,\n  and only the initial error message will be displayed.  </p>\n\n  <p>You can customize this page using the CSRF_FAILURE_VIEW setting.</p>\n</div>\n\n</body>\n</html>\n' 0.0630035400390625
+2019-01-11 10:22:41,646 Not Found: /user/
+2019-01-11 10:23:09,000 Not Found: /user/
+2019-01-11 10:23:44,108 Not Found: /user/
+2019-01-11 10:27:34,173 Not Found: /user/
+2019-01-11 10:27:54,231 Not Found: /user/student/1/
+2019-01-11 10:28:45,187 Not Found: /user/
+2019-01-11 10:32:46,425 Method Not Allowed: /user/student/2/
+2019-01-11 10:32:52,346 Method Not Allowed: /user/student/2/
+2019-01-11 10:34:27,037 Not Found: /user/student/2/
+2019-01-11 10:34:29,732 Not Found: /user/student/2/
+2019-01-11 10:36:05,993 Internal Server Error: /user/student/4/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "D:\python3\Lib\socket.py", line 724, in create_connection
+    raise err
+  File "D:\python3\Lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\mixins.py", line 92, in destroy
+    instance = self.get_object()
+  File "E:\env\djenv8\lib\site-packages\rest_framework\generics.py", line 98, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\generics.py", line 21, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\shortcuts.py", line 93, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+2019-01-11 10:56:01,526 Not Found: /user/student/2/
+2019-01-11 11:03:07,164 Internal Server Error: /user/student/5/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "D:\python3\Lib\socket.py", line 724, in create_connection
+    raise err
+  File "D:\python3\Lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 326, in perform_authentication
+    request.user
+  File "E:\env\djenv8\lib\site-packages\rest_framework\request.py", line 223, in user
+    self._authenticate()
+  File "E:\env\djenv8\lib\site-packages\rest_framework\request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\authentication.py", line 126, in authenticate
+    if not user or not user.is_active:
+  File "E:\env\djenv8\lib\site-packages\django\utils\functional.py", line 213, in inner
+    self._setup()
+  File "E:\env\djenv8\lib\site-packages\django\utils\functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+2019-01-11 11:11:04,273 Bad Request: /user/student/
+2019-01-11 11:20:06,254 Internal Server Error: /user/student/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "D:\python3\Lib\socket.py", line 724, in create_connection
+    raise err
+  File "D:\python3\Lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\serializers.py", line 765, in data
+    ret = super(ListSerializer, self).data
+  File "E:\env\djenv8\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 268, in __iter__
+    self._fetch_all()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+2019-01-11 11:21:03,801 Internal Server Error: /user/student/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 583, in connect
+    **kwargs)
+  File "D:\python3\Lib\socket.py", line 724, in create_connection
+    raise err
+  File "D:\python3\Lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\serializers.py", line 765, in data
+    ret = super(ListSerializer, self).data
+  File "E:\env\djenv8\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 268, in __iter__
+    self._fetch_all()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\compiler.py", line 1063, in execute_sql
+    cursor = self.connection.cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 255, in cursor
+    return self._cursor()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 216, in ensure_connection
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\base\base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "E:\env\djenv8\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 630, in connect
+    raise exc
+django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on '47.106.180.185' (timed out)")
+2019-01-11 12:24:28,219 Internal Server Error: /user/student/2/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\env\djenv8\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\env\djenv8\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dj8.django_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 326, in perform_authentication
+    request.user
+  File "E:\env\djenv8\lib\site-packages\rest_framework\request.py", line 223, in user
+    self._authenticate()
+  File "E:\env\djenv8\lib\site-packages\rest_framework\request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\authentication.py", line 126, in authenticate
+    if not user or not user.is_active:
+  File "E:\env\djenv8\lib\site-packages\django\utils\functional.py", line 213, in inner
+    self._setup()
+  File "E:\env\djenv8\lib\site-packages\django\utils\functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\env\djenv8\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\env\djenv8\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'dj8.django_session' doesn't exist")
+2019-01-11 12:26:10,363 Internal Server Error: /user/student/2/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\env\djenv8\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\env\djenv8\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'dj8.django_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 326, in perform_authentication
+    request.user
+  File "E:\env\djenv8\lib\site-packages\rest_framework\request.py", line 223, in user
+    self._authenticate()
+  File "E:\env\djenv8\lib\site-packages\rest_framework\request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\authentication.py", line 126, in authenticate
+    if not user or not user.is_active:
+  File "E:\env\djenv8\lib\site-packages\django\utils\functional.py", line 213, in inner
+    self._setup()
+  File "E:\env\djenv8\lib\site-packages\django\utils\functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "E:\env\djenv8\lib\site-packages\django\contrib\auth\__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "E:\env\djenv8\lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\env\djenv8\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "E:\env\djenv8\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "E:\env\djenv8\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "E:\env\djenv8\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "E:\env\djenv8\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'dj8.django_session' doesn't exist")
+2019-01-11 12:30:31,720 Not Found: /user/student/2/
+2019-01-11 12:30:36,411 Not Found: /user/student/5/
+2019-01-11 13:29:24,916 Not Found: /user/student/4/
+2019-01-11 13:29:29,274 Not Found: /user/student/4/
+2019-01-11 14:39:39,727 Bad Request: /user/student/
+2019-01-11 14:45:30,227 Bad Request: /user/student/
+2019-01-11 14:45:55,506 Bad Request: /user/student/
+2019-01-11 14:49:23,307 Bad Request: /user/student/
+2019-01-11 14:49:45,840 Bad Request: /user/student/
+2019-01-11 14:53:30,181 Bad Request: /user/student/
+2019-01-11 14:53:35,840 Bad Request: /user/student/
+2019-01-11 14:54:57,344 Not Found: /user/student/2/
+2019-01-11 15:03:50,383 Not Found: /user/student/2/
+2019-01-11 15:09:22,812 Not Found: /user/student/4/
+2019-01-11 15:09:29,040 Not Found: /user/student/5/
+2019-01-11 15:09:52,691 Not Found: /user/student/4/
+2019-01-11 15:09:55,562 Not Found: /user/student/5/
+2019-01-11 16:25:06,262 Not Found: /user/student/7/
+2019-01-11 16:25:41,315 Not Found: /user/student/26/
+2019-01-11 16:35:09,508 Not Found: /user/student/4/
+2019-01-12 09:38:17,150 Not Found: /favicon.ico
+2019-01-12 09:39:26,327 Internal Server Error: /user/student/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "E:\env\djenv8\lib\site-packages\django\template\response.py", line 106, in render
+    self.content = self.rendered_content
+  File "E:\env\djenv8\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\renderers.py", line 731, in render
+    template = loader.get_template(self.template)
+  File "E:\env\djenv8\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+2019-01-12 09:53:41,849 Internal Server Error: /user/student/
+Traceback (most recent call last):
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\env\djenv8\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\rest_framework\mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "E:\wordspace\8.django\day08\user\views.py", line 153, in get_queryset
+    result = queryset.filter(is_delete=0, s_name__contains=s_name)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "E:\env\djenv8\lib\site-packages\django\db\models\sql\query.py", line 1101, in build_lookup
+    raise ValueError("Cannot use None as a query value")
+ValueError: Cannot use None as a query value
+2019-01-12 11:11:57,072 Not Found: /media/

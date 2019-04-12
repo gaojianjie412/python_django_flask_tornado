@@ -1,0 +1,48 @@
+
+{% extends 'base_main.html' %}
+
+{% block content %}
+    <p><a href="{% url 'app:add_stu' %}">添加学生信息</a></p>
+    <table>
+        <thead>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>头像</th>
+        </thead>
+        <tbody>
+            {% for stu in stus %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ stu.s_name }}</td>
+                    <td>{{ stu.s_age }}</td>
+                    <td>
+                        {% if stu.s_gender %}
+                            男
+                        {% else %}
+                            女
+                        {% endif %}
+                    </td>
+                    <td><img src="/media/{{ stu.icon }}"></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>
+        当前{{ stus.number }}页, 共{{ stus.paginator.num_pages }}页
+
+        {% if stus.has_previous %}
+        <a href="{% url 'app:all_stu' %}?page={{ stus.previous_page_number }}">上一页</a>
+        {% endif %}
+
+        {% for i in stus.paginator.page_range %}
+            <!--<a href="/app/all_stu/?page={{ i }}">{{ i }}</a>-->
+            <a href="{% url 'app:all_stu' %}?page={{ i }}">{{ i }}</a>
+        {% endfor %}
+
+        {% if stus.has_next %}
+            <a href="{% url 'app:all_stu' %}?page={{ stus.next_page_number }}">下一页</a>
+        {% endif %}
+    </p>
+{% endblock %}

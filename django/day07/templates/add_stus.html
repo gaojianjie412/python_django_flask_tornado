@@ -1,0 +1,12 @@
+
+{% extends 'base_main.html' %}
+
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>姓名: <input type="text" name="username"> {{ errors.username.0 }}</p>
+        <p>性别: <input type="text" name="gender">{{ errors.gender.0 }}</p>
+        <p>图片: <input type="file" name="icon"> {{ errors.icon.0 }}</p>
+        <p><input type="submit" value="提交"></p>
+    </form>
+{% endblock %}

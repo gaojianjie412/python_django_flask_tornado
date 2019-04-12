@@ -1,0 +1,75 @@
+
+{% extends 'base_main.html' %}
+
+{% block content %}
+    <script>
+        $.ajax({
+            url:'/user/student/',
+            type:'GET',
+            dataType:'json',
+            success: function(result){
+                console.log(result)
+                for(var i=0; i<result.data.length; i++){
+                    var s = '<p>姓名: ' + result.data[i].s_name
+                    s += ' 性别：' + result.data[i].s_gender
+                    s += ' 年龄：' + result.data[i].s_age
+                    s += '<a onclick="del_stu(' + result.data[i].id + ');">删除</a>'
+                    s += '<a onclick="edit_stu(' + result.data[i].id + ')">编辑</a></p>'
+                    $('.stus').append(s)
+                }
+            },
+            error: function(result){
+                alert('失败')
+            }
+        })
+
+        function del_stu(id){
+            $.ajax({
+                url: '/user/student/' + id + '/',
+                type: 'DELETE',
+                dataType: 'json',
+                success: function(result){
+                    console.log(result)
+                    location.href = '/user/stu_list/'
+                },
+                error: function(result){
+                    alert('删除失败')
+                }
+            })
+        }
+
+        function edit_stu(id){
+            $.ajax({
+                url: '/user/student/' + id + '/',
+                type:'PATCH',
+                data: {'s_name': '小希希1'},
+                dataType:'json',
+                success: function(data){
+                    console.log(data)
+                },
+                error: function(data){
+                    alert('修改失败')
+                }
+            })
+        }
+
+        function add_stu(){
+            $.ajax({
+                url:'/user/student/',
+                type:'POST',
+                data:{'s_name': '小明123'},
+                dataType:'json',
+                success:function(data){
+                    console.log(data)
+                },
+                error:function(data){
+                    alert('失败')
+                }
+            })
+        }
+    </script>
+
+    <div class="stus">
+        <a onclick="add_stu();">添加</a>
+    </div>
+{% endblock %}
