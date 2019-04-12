@@ -1,0 +1,47 @@
+
+{% extends 'base_main.html' %}
+
+{% block content %}
+    <table>
+        <thead>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>头像</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+            {% for stu in stus %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ stu.s_name }}</td>
+                <td>{{ stu.s_age }}</td>
+                <td><img src="/static/media/{{ stu.icon }}" width="30" height="30"></td>
+                <td>
+                    <a href="{{ url_for('app.edit_stu', id=stu.id) }}">编辑</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>
+        当前{{ pg.page }}页,共{{ pg.pages }}页
+        {% if pg.has_prev %}
+            <a href="{{ url_for('app.all_stu')}}?page={{ pg.prev_num }}">上一页</a>
+        {% endif %}
+
+        {% for i in pg.iter_pages() %}
+            {% if i %}
+                <a href="{{ url_for('app.all_stu')}}?page={{ i }}">{{ i }}</a>
+            {% else %}
+                ...
+            {% endif %}
+        {% endfor %}
+
+        {% if pg.has_next %}
+            <a href="{{ url_for('app.all_stu')}}?page={{ pg.next_num }}">下一页</a>
+        {% endif %}
+    </p>
+
+{% endblock %}
+

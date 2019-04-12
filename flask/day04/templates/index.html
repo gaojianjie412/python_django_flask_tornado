@@ -1,0 +1,46 @@
+
+{% extends 'base_main.html' %}
+
+{% block title %}
+    我是index首页
+{% endblock %}
+
+{% block css %}
+    <!--获取坑css之前填充的内容-->
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+    <P>我是p标签</P>
+    <!--包含footer.html页面的内容-->
+    {% include 'footer.html' %}
+
+    {{ a | safe }}
+    {{ 'python' | upper }}
+    {{ 'Python' | lower | length }}
+    <br>
+    {{ b }}
+    <br>
+    {% for i in b %}
+
+        <p {% if loop.index == 1 %}
+                style="color:red;"
+           {% endif %}
+        >{{ loop.first }} {{ loop.last }}编号:{{ loop.revindex }}值：{{ i }}</p>
+    {% else %}
+        <p>c变量不存在，解析不了</p>
+    {% endfor %}
+    <br>
+
+    {% from 'functions.html' import say %}
+    {% from 'functions.html' import create %}
+
+
+    {{ say() }}
+
+
+    {{ create('小明', 23) }}
+    {{ create('蕊蕊', 19) }}
+
+{% endblock %}

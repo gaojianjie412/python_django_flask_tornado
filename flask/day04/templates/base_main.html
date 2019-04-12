@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+
+{% block css %}
+    <!--第一种导入方式-->
+    <!--<link rel="stylesheet" href="/static/css/index.css">-->
+    <!--第二种导入方式-->
+    {# sfsfsfsfs #}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+
+{% endblock %}
+

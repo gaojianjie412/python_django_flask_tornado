@@ -1,0 +1,10 @@
+
+<!--无参数-->
+{% macro say() %}
+    <h5>今天班上女士好漂亮</h5>
+{% endmacro %}
+
+<!--有参数-->
+{% macro create(name, age) %}
+    <h5>登录系统的用户名为：{{ name }}, 年龄：{{ age }}</h5>
+{% endmacro %}
