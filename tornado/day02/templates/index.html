@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+
+{% block css %}
+    <!--第一种加载方式：直接定义静态文件的路径-->
+    <!--<link rel="stylesheet" href="/static/css/style.css">-->
+
+    <!---->
+    <link rel="stylesheet" href="{{ static_url('css/style.css')}}">
+{% end %}
+
+{% block content %}
+    <P>hahh</P>
+
+    {{ items }}
+    {# for标签，使用{% for %} {% end %} #}
+    {% for a in items %}
+        {% if a == 'python' %}
+            <P style="color:red;">{{ a }}</P>
+        {% elif a == 'php' %}
+            <P style="color:green;">{{ a }}</P>
+        {% else %}
+            <p>{{ a }}</p>
+        {% end %}
+    {% end %}
+
+    {{ items[0] }}
+
+    {% while len(items) %}
+        <p>{{ items.pop() }}</p>
+
+    {% end %}
+
+    <!--如果通过下标取items中的元素，下表如果超过了items的长度-->
+    {% try %}
+        <p>{{ items2[10] }}</p>
+    {% except %}
+        <p>下标越界</p>
+    {% finally %}
+        <p>必须执行的操作</p>
+    {% end %}
+
+    {% set n=1 %}
+        <p>{{ n }}</p>
+
+{% end %}
